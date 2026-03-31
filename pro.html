@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Study Room</title>
+<link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+
+<h1>Virtual Study Room 📚</h1>
+
+<div class="container">
+
+<h2>Pomodoro Timer</h2>
+<input type="number" id="timerInput" placeholder="Minutes" min="1" style="width:80px;">
+<button onclick="setTimerFromInput()">Set Timer ⏱️</button>
+<div id="timer">00:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="pauseTimer()">Pause</button>
+<button onclick="resetTimer()">Reset</button>
+
+<h2>Study Tasks</h2>
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+<ul id="taskList"></ul>
+
+<audio id="music" controls>
+    <source src="music.mp3.mpeg" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script src="pro.js"></script>
+
+</body>
+</html>
